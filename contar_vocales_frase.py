@@ -1,10 +1,11 @@
 frase = input("Escriba la frase que quiere saber cuantas vocales y consonantes tiene?\n")
-consonantes = 0
-vocales = 0
+n_consonantes = 0
+n_vocales = 0
+vocales = ["a","e","i","o","u"]
 for letra in  frase:
-    if letra == "a" or letra == "e" or letra == "i" or letra == "o" or letra == "u":
-        vocales +=1
+    if letra in vocales:
+        n_vocales +=1
     else:
-        consonantes +=1
+        n_consonantes +=1
 
-print("La frase tiene {} consonantes y {} vocales".format(consonantes,vocales))
+print("La frase tiene {} consonantes y {} vocales".format(n_consonantes,n_vocales))
